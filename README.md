@@ -34,20 +34,30 @@ An applied, multi-modal data science and machine learning repository for the agr
 
 ---
 
-### Week 4: Statistical Modeling and Prediction (Current Phase)
+### Week 4: Statistical Modeling and Prediction
 * **Focus**: Econometric & biophysical crop yield regression (OLS, Ridge, Lasso, Polynomial), Gauss-Markov hypothesis testing, commodity price time-series forecasting (SARIMAX, Holt-Winters), and 3-year multi-scenario farm enterprise stress testing (30–35 hours scope).
 * **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word document, 1.9 MB [optimized under 2 MB limit], 6 Publication Figures, 6 Formatted Tables, and Callouts).
 * **Technical Report (Markdown)**: [`Agribusiness_Statistical_Modeling_and_Prediction_Report.md`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.md).
 * **Automated Word Generator**: [`generate_week4_report.py`](./generate_week4_report.py).
 * **Statistical Modeling Engine**: [`src/models/statistical_modeling.py`](./src/models/statistical_modeling.py) (OLS regression, Ridge/Lasso cross-validation, Gauss-Markov suite, SARIMAX forecasting, and scenario stress testing).
-* **Figure Catalog (Week 4)**: [`reports/figures/`](./reports/figures/)
-  1. `fig1_regression_coefficients_elasticity.png`: Comparative standardized feature elasticities across Ridge ($L_2$) and Lasso ($L_1$).
-  2. `fig2_yield_predicted_vs_actual.png`: Model predicted vs. observed maize yields with 1:1 parity line and Gaussian residual distribution.
-  3. `fig3_nonlinear_agronomic_response_surface.png`: Non-linear yield response surface across GDD and atmospheric VPD.
-  4. `fig4_regression_diagnostics_suite.png`: 4-quadrant Gauss-Markov diagnostic suite (Residuals vs Fitted, Normal Q-Q, Scale-Location, Residuals vs Leverage).
-  5. `fig5_commodity_price_forecast_sarimax.png`: Maize FOB price time-series walk-forward evaluation and 12-month forward forecast with 80% and 95% fan bands.
-  6. `fig6_multiscenario_stress_projections.png`: Dual-panel scenario projections (2024–2026) for crop yield (MT/ha) and farm gross margins (USD/ha).
 * **GitHub Repository**: [`srujan1-creator/Statistical-Modeling-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-Prediction.git)
+
+---
+
+### Week 5: Integrated Business Recommendation Report (Capstone Project)
+* **Focus**: Capstone integration of market analysis, multi-modal public data engineering, exploratory data analysis, and econometric predictive modeling into actionable business strategies tailored for commercial agribusiness stakeholders (30–35 hours scope).
+* **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Integrated_Business_Recommendation_Report.docx`](./Agribusiness_Integrated_Business_Recommendation_Report.docx) (Executive Word Deliverable, 1.62 MB, 6 Publication Figures [220 DPI], 5 Formatted Tables, Strategic Implementation Roadmap, Risk Matrix, Financial Stress Tests).
+* **Technical Report (Markdown)**: [`Agribusiness_Integrated_Business_Recommendation_Report.md`](./Agribusiness_Integrated_Business_Recommendation_Report.md).
+* **Automated Word Generator**: [`generate_week5_report.py`](./generate_week5_report.py).
+* **Capstone Visualizations Engine**: [`src/recommendations/build_capstone_visuals.py`](./src/recommendations/build_capstone_visuals.py).
+* **Figure Catalog (Week 5 Capstone)**: [`reports/figures/`](./reports/figures/)
+  1. `capstone_fig1_strategic_data_to_decision_architecture.png`: Integrated 4-tier data-to-decision enterprise architecture.
+  2. `capstone_fig2_biophysical_yield_drivers_and_elasticity.png`: Biophysical yield drivers, standardized elasticity, and economic valuation ($/ha).
+  3. `capstone_fig3_commodity_market_forecasting_and_hedging.png`: SARIMAX 12-month forward commodity forecast with commercial execution corridors (> $230/MT aggressive hedge, $210–$230/MT collar, < $210/MT spot storage).
+  4. `capstone_fig4_scenario_financial_impact_and_margins.png`: 3-Year enterprise financial projections and gross margin stress test breakdown across 4 scenarios.
+  5. `capstone_fig5_phased_implementation_roadmap.png`: 36-Month agribusiness strategic implementation roadmap across 3 value-accretive phases.
+  6. `capstone_fig6_integrated_risk_matrix.png`: Enterprise agribusiness risk assessment matrix (5x5 likelihood vs severity) and prioritization framework.
+* **GitHub Repository**: [`srujan1-creator/Integrated-Business-Recommendation-Report`](https://github.com/srujan1-creator/Integrated-Business-Recommendation-Report.git)
 
 ---
 
@@ -70,6 +80,12 @@ Agridatascience project/
 │       └── weather_agrometeorology_cleaned.csv
 ├── reports/
 │   └── figures/                           # Publication-grade figures (300 DPI)
+│       ├── capstone_fig1_strategic_data_to_decision_architecture.png
+│       ├── capstone_fig2_biophysical_yield_drivers_and_elasticity.png
+│       ├── capstone_fig3_commodity_market_forecasting_and_hedging.png
+│       ├── capstone_fig4_scenario_financial_impact_and_margins.png
+│       ├── capstone_fig5_phased_implementation_roadmap.png
+│       ├── capstone_fig6_integrated_risk_matrix.png
 │       ├── fig1_regression_coefficients_elasticity.png
 │       ├── fig2_yield_predicted_vs_actual.png
 │       ├── fig3_nonlinear_agronomic_response_surface.png
@@ -91,8 +107,10 @@ Agridatascience project/
 │   │   └── clean_and_harmonize.py         # Unit conversion, GDD, VPD, SG filtering
 │   ├── eda/
 │   │   └── exploratory_analysis.py        # Week 3 statistical engine & visualization generator
-│   └── models/
-│       └── statistical_modeling.py        # Week 4 econometric regression & SARIMAX forecasting
+│   ├── models/
+│   │   └── statistical_modeling.py        # Week 4 econometric regression & SARIMAX forecasting
+│   └── recommendations/
+│       └── build_capstone_visuals.py      # Week 5 capstone decision visualizations
 ├── Agribusiness_Market_Analysis_and_Planning_Report.docx   # Week 1 Word deliverable
 ├── Agribusiness_Market_Analysis_and_Planning_Report.md     # Week 1 Markdown report
 ├── Agribusiness_Public_Data_Collection_and_Preprocessing_Report.docx # Week 2 Word deliverable
@@ -101,10 +119,13 @@ Agridatascience project/
 ├── Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.md   # Week 3 Markdown report
 ├── Agribusiness_Statistical_Modeling_and_Prediction_Report.docx # Week 4 Word deliverable
 ├── Agribusiness_Statistical_Modeling_and_Prediction_Report.md   # Week 4 Markdown report
+├── Agribusiness_Integrated_Business_Recommendation_Report.docx # Week 5 Capstone Word deliverable
+├── Agribusiness_Integrated_Business_Recommendation_Report.md   # Week 5 Capstone Markdown report
 ├── generate_report.py                     # Week 1 docx generator
 ├── generate_week2_report.py               # Week 2 docx generator
 ├── generate_week3_report.py               # Week 3 docx generator
 ├── generate_week4_report.py               # Week 4 docx generator
+├── generate_week5_report.py               # Week 5 docx generator
 └── README.md
 ```
 
@@ -150,4 +171,10 @@ python generate_week3_report.py
 
 # Generate Week 4 Report
 python generate_week4_report.py
+
+# Generate Week 5 Capstone Visualizations & Decision Frameworks
+python src/recommendations/build_capstone_visuals.py
+
+# Generate Week 5 Integrated Business Recommendation Report (DOCX)
+python generate_week5_report.py
 ```
