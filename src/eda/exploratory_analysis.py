@@ -188,7 +188,7 @@ def generate_figure1_thermal_gdd(weather_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig1_thermal_regimes_gdd.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -257,7 +257,7 @@ def generate_figure2_hydrological_vpd(weather_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig2_hydrological_moisture_vpd.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -332,7 +332,7 @@ def generate_figure3_ndvi_phenology(ndvi_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig3_sentinel2_ndvi_phenology.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -412,7 +412,7 @@ def generate_figure4_commodity_prices(prices_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig4_commodity_prices_volatility.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -461,7 +461,7 @@ def generate_figure5_parity_ratios(prices_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig5_input_output_parity_ratios.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -538,7 +538,7 @@ def generate_figure6_crop_yields(crop_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig6_crop_yield_benchmarks.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -583,7 +583,7 @@ def generate_figure7_correlation_matrix(weather_df):
     
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig7_multivariate_correlation_matrix.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
@@ -692,7 +692,7 @@ def generate_figure8_anomaly_dashboard(weather_df, ndvi_df, prices_df, crop_df):
                  fontsize=14, fontweight='bold', color=C_PRIMARY, y=0.99)
     plt.tight_layout()
     output_path = os.path.join(FIG_DIR, "fig8_anomaly_detection_dashboard.png")
-    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close()
     return output_path
 
