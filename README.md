@@ -26,7 +26,7 @@ An applied, multi-modal data science and machine learning repository for the agr
 
 ### Week 3: Exploratory Data Analysis and Visualization
 * **Focus**: Rigorous exploratory data analysis (EDA), univariate statistical moments, bivariate/multivariate correlation decomposition, biological phenology extraction, and multi-tiered anomaly detection across the four agribusiness tiers (30–35 hours scope).
-* **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.docx`](./Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.docx) (Executive Word document, 3.9 MB, 8 High-Resolution 300 DPI Figures, 8 Standardized Tables, and Callouts).
+* **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.docx`](./Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.docx) (Executive Word document, 1.9 MB [optimized under 2 MB limit], 8 High-Resolution Figures, 8 Standardized Tables, and Callouts).
 * **Technical Report (Markdown)**: [`Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.md`](./Agribusiness_Exploratory_Data_Analysis_and_Visualization_Report.md).
 * **Automated Word Generator**: [`generate_week3_report.py`](./generate_week3_report.py).
 * **Analytical EDA Engine**: [`src/eda/exploratory_analysis.py`](./src/eda/exploratory_analysis.py) (Computes moments, kurtosis, skewness, generates 8 publication-grade charts).
@@ -36,7 +36,7 @@ An applied, multi-modal data science and machine learning repository for the agr
 
 ### Week 4: Statistical Modeling and Prediction (Current Phase)
 * **Focus**: Econometric & biophysical crop yield regression (OLS, Ridge, Lasso, Polynomial), Gauss-Markov hypothesis testing, commodity price time-series forecasting (SARIMAX, Holt-Winters), and 3-year multi-scenario farm enterprise stress testing (30–35 hours scope).
-* **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word document, 2.3 MB, 6 High-Resolution 300 DPI Figures, 6 Formatted Tables, and Callouts).
+* **Formal Submission Deliverable (DOCX)**: [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word document, 1.9 MB [optimized under 2 MB limit], 6 Publication Figures, 6 Formatted Tables, and Callouts).
 * **Technical Report (Markdown)**: [`Agribusiness_Statistical_Modeling_and_Prediction_Report.md`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.md).
 * **Automated Word Generator**: [`generate_week4_report.py`](./generate_week4_report.py).
 * **Statistical Modeling Engine**: [`src/models/statistical_modeling.py`](./src/models/statistical_modeling.py) (OLS regression, Ridge/Lasso cross-validation, Gauss-Markov suite, SARIMAX forecasting, and scenario stress testing).

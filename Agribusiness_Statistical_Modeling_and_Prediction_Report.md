@@ -3,7 +3,7 @@
 **Week 4 Formal Deliverable & Technical Report**  
 **Author:** Agribusiness Data Science & Quantitative Research Lead  
 **Scope:** 30–35 Hours Comprehensive Analytical Investigation  
-**Primary Deliverable (DOCX):** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word Document, 2.3 MB, 6 High-Resolution 300 DPI Charts, 6 Formatted Tables)  
+**Primary Deliverable (DOCX):** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word Document, 1.9 MB [optimized under 2 MB limit], 6 Publication Figures, 6 Formatted Tables)  
 **Target Repository & Remote:** [`srujan1-creator/Statistical-Modeling-and-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-and-Prediction.git)
 
 ---
@@ -262,7 +262,7 @@ python generate_week4_report.py
 ```
 
 ### 3. Deliverable Files
-- **Formal Word Report (DOCX):** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (2.3 MB)
+- **Formal Word Report (DOCX):** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (1.9 MB [optimized under 2 MB limit])
 - **Technical Markdown Report:** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.md`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.md)
 - **Modeling Engine:** [`src/models/statistical_modeling.py`](./src/models/statistical_modeling.py)
 - **Report Generator:** [`generate_week4_report.py`](./generate_week4_report.py)

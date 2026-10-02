@@ -512,7 +512,7 @@ def generate_figure1_coefficients(ols_res, ridge_res, lasso_res):
     """
     Figure 1: Standardized Feature Coefficients & Elasticities across OLS, Ridge, and Lasso.
     """
-    fig, ax = plt.subplots(figsize=(10, 6), dpi=300)
+    fig, ax = plt.subplots(figsize=(10, 6), dpi=150)
 
     # Features (excluding constant)
     features = [
@@ -566,7 +566,7 @@ def generate_figure1_coefficients(ols_res, ridge_res, lasso_res):
     ax.set_xlim(-0.65, 0.65)
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig1_regression_coefficients_elasticity.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -575,7 +575,7 @@ def generate_figure2_predicted_vs_actual(df, ols_res):
     """
     Figure 2: Predicted vs Actual Crop Yield Scatter Plot with 1:1 Parity and Residual Histogram.
     """
-    fig = plt.figure(figsize=(11, 5.5), dpi=300)
+    fig = plt.figure(figsize=(11, 5.5), dpi=150)
     gs = fig.add_gridspec(1, 2, width_ratios=[1.3, 1], wspace=0.25)
 
     ax1 = fig.add_subplot(gs[0])
@@ -620,7 +620,7 @@ def generate_figure2_predicted_vs_actual(df, ols_res):
 
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig2_yield_predicted_vs_actual.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -629,7 +629,7 @@ def generate_figure3_response_surface(poly_model):
     """
     Figure 3: Non-Linear Agronomic Response Surface (Yield vs GDD and VPD 2D Contour Heatmap).
     """
-    fig, ax = plt.subplots(figsize=(9, 6.5), dpi=300)
+    fig, ax = plt.subplots(figsize=(9, 6.5), dpi=150)
 
     gdd_grid = np.linspace(1350, 1950, 60)
     vpd_grid = np.linspace(0.7, 2.1, 60)
@@ -690,7 +690,7 @@ def generate_figure3_response_surface(poly_model):
 
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig3_nonlinear_agronomic_response_surface.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -703,7 +703,7 @@ def generate_figure4_diagnostics_suite(ols_model, df, feature_cols, target_col):
     3. Scale-Location Plot (Homoskedasticity Check)
     4. Residuals vs Leverage / Cook's Distance (Influential Outliers)
     """
-    fig, axes = plt.subplots(2, 2, figsize=(11, 9), dpi=300)
+    fig, axes = plt.subplots(2, 2, figsize=(11, 9), dpi=150)
 
     fitted = ols_model.fittedvalues
     residuals = ols_model.resid
@@ -762,7 +762,7 @@ def generate_figure4_diagnostics_suite(ols_model, df, feature_cols, target_col):
 
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig4_regression_diagnostics_suite.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -772,7 +772,7 @@ def generate_figure5_time_series_forecast(prices_df, split_idx, sarimax_pred, sa
     """
     Figure 5: Time-Series Commodity Price Forecast (SARIMAX Walk-Forward Evaluation + 12M Projections).
     """
-    fig, ax = plt.subplots(figsize=(11, 5.8), dpi=300)
+    fig, ax = plt.subplots(figsize=(11, 5.8), dpi=150)
 
     dates = pd.to_datetime(prices_df['period'] + '-01')
     maize_actual = prices_df['maize_usd_per_mt'].values
@@ -823,7 +823,7 @@ def generate_figure5_time_series_forecast(prices_df, split_idx, sarimax_pred, sa
 
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig5_commodity_price_forecast_sarimax.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -832,7 +832,7 @@ def generate_figure6_scenario_projections(scenario_res):
     """
     Figure 6: Multi-Scenario Stress Test Projections (2024-2026 Yield & Enterprise Gross Margins).
     """
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5.5), dpi=300)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5.5), dpi=150)
 
     years = scenario_res['Baseline Optimal']['years']
     colors = {
@@ -882,7 +882,7 @@ def generate_figure6_scenario_projections(scenario_res):
 
     plt.tight_layout()
     out_path = os.path.join(FIG_DIR, "fig6_multiscenario_stress_projections.png")
-    fig.savefig(out_path, dpi=300, bbox_inches='tight')
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f"[OK] Generated: {out_path}")
 
@@ -958,7 +958,7 @@ def main():
     print(f"[OK] Master modeling summary statistics saved to: {json_out_path}")
 
     # Generate Figures
-    print("\nGenerating 6 Publication-Grade Figures (300 DPI)...")
+    print("\nGenerating 6 Publication-Grade Figures (150 DPI)...")
     generate_figure1_coefficients(ols_results, reg_results['ridge'], reg_results['lasso'])
     generate_figure2_predicted_vs_actual(yield_df, ols_results)
     generate_figure3_response_surface(poly_model)
