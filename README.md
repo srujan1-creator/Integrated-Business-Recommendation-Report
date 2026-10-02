@@ -47,7 +47,7 @@ An applied, multi-modal data science and machine learning repository for the agr
   4. `fig4_regression_diagnostics_suite.png`: 4-quadrant Gauss-Markov diagnostic suite (Residuals vs Fitted, Normal Q-Q, Scale-Location, Residuals vs Leverage).
   5. `fig5_commodity_price_forecast_sarimax.png`: Maize FOB price time-series walk-forward evaluation and 12-month forward forecast with 80% and 95% fan bands.
   6. `fig6_multiscenario_stress_projections.png`: Dual-panel scenario projections (2024–2026) for crop yield (MT/ha) and farm gross margins (USD/ha).
-* **GitHub Repository**: [`srujan1-creator/Statistical-Modeling-and-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-and-Prediction.git)
+* **GitHub Repository**: [`srujan1-creator/Statistical-Modeling-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-Prediction.git)
 
 ---
 

@@ -4,7 +4,7 @@
 **Author:** Agribusiness Data Science & Quantitative Research Lead  
 **Scope:** 30–35 Hours Comprehensive Analytical Investigation  
 **Primary Deliverable (DOCX):** [`Agribusiness_Statistical_Modeling_and_Prediction_Report.docx`](./Agribusiness_Statistical_Modeling_and_Prediction_Report.docx) (Executive Word Document, 1.9 MB [optimized under 2 MB limit], 6 Publication Figures, 6 Formatted Tables)  
-**Target Repository & Remote:** [`srujan1-creator/Statistical-Modeling-and-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-and-Prediction.git)
+**Target Repository & Remote:** [`srujan1-creator/Statistical-Modeling-Prediction`](https://github.com/srujan1-creator/Statistical-Modeling-Prediction.git)
 
 ---
 
